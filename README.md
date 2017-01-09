@@ -26,19 +26,20 @@ Optimizing :
 >- 76: Javascript moved down and made async
 >- 86: web font load made async
 >- 87: image minified
->-93: Style.css moved down
+>- 93: Style.css moved down
 
 ###Part 2: Getting Rid of Jank in pizza.html
+
 >
-> **Average scripting time for 10 frames: Changes**
-> -43ms:  first load
-> -32ms: used requestAnimationFrame()
-> -1.5ms: moved document.body.scrollTop  out of for loop
+> **Average scripting time for 10 frames: Changes** 
+>- 43ms:  first load 
+>- 32ms: used requestAnimationFrame()
+>- 1.5ms: moved document.body.scrollTop out of for loop
 
 >
 > **Resize Time: Changes**
-> -134ms: First load
-> -4.5ms: removed width calculation to avoid reflow get value from newly created Pizza sizes array
+>- 134ms: First load
+>- 4.5ms: removed width calculation to avoid reflow get value from newly created Pizza sizes array
 
 
 ### Optimization Tips and Tricks
