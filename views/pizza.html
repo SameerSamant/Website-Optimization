@@ -98,7 +98,8 @@
           </div>
           <div id="pizzaSize" class="col-md-6">Medium</div>
           <div class="col-md-12">
-            <input id="sizeSlider" type="range" min="1" max="3" value="2" step="1" onchange="resizePizzas(this.value)"></input>
+          <!-- SS: changed indexing to make array access simpler -->
+            <input id="sizeSlider" type="range" min="0" max="2" value="1" step="1" onchange="resizePizzas(this.value)"></input> 
           </div>
         </div>
         <div id="randomPizzas" class="row">
