@@ -35,12 +35,18 @@ Optimizing :
 >- 43ms:  first load 
 >- 32ms: used requestAnimationFrame()
 >- 1.5ms: moved document.body.scrollTop out of for loop
+>- 1ms: used getElementsByClassName instead of inefficient document.querySelectorAll
 
 >
 > **Resize Time: Changes**
 >- 134ms: First load
 >- 4.5ms: removed width calculation to avoid reflow get value from newly created Pizza sizes array
+>- 0.15ms: cached element call and removed from loop
 
+> 
+> **Average load time : Changes**
+>- 25ms: First load
+>- 5ms: Removed element call from for loop
 
 ### Optimization Tips and Tricks
 * [Optimizing Performance](https://developers.google.com/web/fundamentals/performance/ "web performance")
