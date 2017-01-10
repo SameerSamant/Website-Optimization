@@ -30,6 +30,9 @@ form {
 }
 
 .mover {
+  /*SS: hardware acceleration*/
+  -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+  backface-visibility: hidden;
   position: fixed;
   width: 256px;
   z-index: -1;
